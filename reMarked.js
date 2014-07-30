@@ -203,7 +203,7 @@ define([
             wrap: "",
             lnPfx: "",		// only block
             lnInd: 0,		// only block
-            init: function (e, p, i) {
+            initialize: function (e, p, i) {
                 this.e = e;
                 this.p = p;
                 this.i = i;
@@ -348,7 +348,7 @@ define([
             wrapK: null,
             tagr: false,
             lnInd: null,
-            init: function (e, p, i) {
+            initialize: function (e, p, i) {
                 this.supr(e, p, i);
 
                 // kids indented
@@ -556,7 +556,7 @@ define([
                 return kids.indexOf("`") !== -1 ? "``" : "`";	// esc double backticks
             },
             lnInd: 0,
-            init: function (e, p, i) {
+            initialize: function (e, p, i) {
                 this.supr(e, p, i);
 
                 if (this.p instanceof lib.pre)
@@ -593,7 +593,7 @@ define([
 
         lib.table = cfg.gfm_tbls ? lib.blk.extend({
             cols: [],
-            init: function (e, p, i) {
+            initialize: function (e, p, i) {
                 this.supr(e, p, i);
                 this.cols = [];
             },
