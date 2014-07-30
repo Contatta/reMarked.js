@@ -1,0 +1,20 @@
+{
+    "name": "reMarked",
+    "description": "HTML to markdown converter",
+    "version": "1.0.0",
+    "homepage": "https://github.com/leeoniya/reMarked.js",
+    "author": "Leon Sorokin <leeoniya@gmail.com>",
+    "main": "./reMarked.js",
+    "keywords": [
+        "html",
+        "markdown",
+        "convert"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leeoniya/reMarked.js.git"
+    },
+    "dependencies": {
+        "klass": ">= 1.4.0"
+    }
+}
